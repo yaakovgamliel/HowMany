@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="G2TViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTj-Uu-tmL">
+                                <rect key="frame" x="276" y="506" width="48" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y5d-b6-k4H"/>
+                                    <constraint firstAttribute="width" constant="48" id="d6U-sp-sts"/>
+                                    <constraint firstAttribute="height" constant="44" id="z35-fV-rBv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="plus-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="z35-fV-rBv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="counterButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fx0-ts-Qpm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c12-uC-OOT">
+                                <rect key="frame" x="195" y="68" width="211" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="JY1-ka-F4v"/>
+                                    <constraint firstAttribute="width" constant="211" id="W5y-yY-Ywv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="98"/>
+                                <color key="textColor" red="0.93333339691162109" green="0.92549026012420654" blue="0.93725496530532837" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49671486597588899" blue="0.49284647552914373" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c12-uC-OOT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8tY-hb-ZV4"/>
+                            <constraint firstItem="c12-uC-OOT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="bou-FL-wPc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MTj-Uu-tmL" secondAttribute="bottom" constant="50" id="n0P-0b-wcI"/>
+                            <constraint firstItem="c12-uC-OOT" firstAttribute="centerX" secondItem="MTj-Uu-tmL" secondAttribute="centerX" id="xmV-Rn-q0I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countlabel" destination="c12-uC-OOT" id="WxE-Uh-LcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="-230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus-button" width="161" height="161"/>
+    </resources>
+</document>
